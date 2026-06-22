@@ -105,8 +105,6 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-Add screenshots here after deployment.
-
 Example:
 
 - Home Page
@@ -130,15 +128,7 @@ DocuMind/
 └── venv/
 ```
 
----
 
-## 🔮 Future Improvements
-
-- OCR support for scanned PDFs
-- Source citation for generated answers
-- Support for DOCX and TXT files
-- Better document comparison
-- Cloud deployment
 
 ---
 
@@ -147,5 +137,3 @@ DocuMind/
 **Diya Sharma**
 
 LinkedIn: https://www.linkedin.com/in/diya-sharma12
-
-GitHub: https://github.com/Diyasharma020
