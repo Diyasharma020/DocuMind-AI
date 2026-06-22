@@ -1,61 +1,77 @@
 # 📄 DocuMind AI
 
-An AI-powered document analytics system that enables users to chat with one or more PDF documents using Retrieval-Augmented Generation (RAG). The application performs semantic search over uploaded documents and generates context-aware responses using Google's Gemini API.
+An AI-powered multi-document Retrieval-Augmented Generation (RAG) system that enables users to interact with PDF documents using natural language. The application performs semantic search over uploaded documents and generates context-aware responses using Google Gemini 2.5 Flash.
 
 ---
 
 ## ✨ Features
 
-- 📂 Upload one or multiple PDF documents
-- 💬 Chat with your documents using natural language
-- 🔍 Semantic search using FAISS Vector Database
-- 🤖 Context-aware responses powered by Gemini 2.5 Flash
-- 🧠 Hugging Face sentence embeddings
-- 💭 Multi-turn conversation history
-- 📥 Download chat history
-- 📑 View retrieved context chunks with page numbers
-- ⚡ Interactive Streamlit interface
+* 📂 Upload one or multiple PDF documents
+* 💬 Chat with documents using natural language
+* 🔍 Semantic search with FAISS Vector Database
+* 🤖 Context-aware responses powered by Google Gemini 2.5 Flash
+* 🧠 Hugging Face sentence embeddings
+* 💭 Multi-turn conversational memory
+* 📥 Download chat history
+* 📑 View retrieved document chunks with page metadata
+* ⚡ Interactive Streamlit interface
 
 ---
 
 ## 🛠 Tech Stack
 
-- Python
-- Streamlit
-- Google Gemini API
-- LangChain
-- FAISS
-- Hugging Face Embeddings
-- PyPDF
-- python-dotenv
+* Python
+* Streamlit
+* Google Gemini API
+* LangChain
+* FAISS
+* Hugging Face Embeddings
+* PyPDF
+* python-dotenv
 
 ---
 
 ## 🏗 Project Architecture
 
 ```text
-PDF Upload
+PDF Upload(s)
       │
       ▼
-Extract Text (PyPDF)
+Text Extraction (PyPDF)
       │
       ▼
-Document Chunking
+Recursive Text Chunking
       │
       ▼
-HuggingFace Embeddings
+Hugging Face Embeddings
       │
       ▼
-FAISS Vector Store
+FAISS Vector Database
       │
       ▼
-Similarity Search
+Semantic Retrieval
       │
       ▼
-Gemini 2.5 Flash
+Google Gemini 2.5 Flash
       │
       ▼
-Answer Generation
+Context-Aware Answer Generation
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+DocuMind/
+│
+├── app.py
+├── rag_engine.py
+├── requirements.txt
+├── README.md
+├── .env.example
+├── .gitignore
+└── venv/
 ```
 
 ---
@@ -65,8 +81,8 @@ Answer Generation
 Clone the repository
 
 ```bash
-git clone <your-repository-link>
-cd DocuMind
+git clone https://github.com/Diyasharma020/DocuMind-AI.git
+cd DocuMind-AI
 ```
 
 Create a virtual environment
@@ -77,7 +93,7 @@ python -m venv venv
 
 Activate it
 
-Windows
+**Windows**
 
 ```bash
 venv\Scripts\activate
@@ -105,35 +121,13 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-Example:
-
-- Home Page
-- Upload PDFs
-- Chat Interface
-- Retrieved Context
-
----
-
-## 📂 Project Structure
-
-```text
-DocuMind/
-│
-├── app.py
-├── rag_engine.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── .gitignore
-└── venv/
-```
-
-
+* Home Screen
+* PDF Upload
+* Chat Interface
+* Retrieved Chunks
 
 ---
 
 ## 👩‍💻 Author
 
 **Diya Sharma**
-
-LinkedIn: https://www.linkedin.com/in/diya-sharma12
