@@ -121,10 +121,10 @@ streamlit run app.py
 
 ## 📸 Screenshots
 
-* Home Screen
-* PDF Upload
-* Chat Interface
-* Retrieved Chunks
+<img width="1895" height="815" alt="Screenshot 2026-06-23 181839" src="https://github.com/user-attachments/assets/e6b268a7-1ea6-4b5d-ab5c-5c8863a521c4" />
+<img width="1880" height="772" alt="Screenshot 2026-06-23 183133" src="https://github.com/user-attachments/assets/698902a9-e884-4dfa-bee5-5592167e9dfa" />
+<img width="1912" height="812" alt="Screenshot 2026-06-23 183141" src="https://github.com/user-attachments/assets/f0cb54e2-1ab1-48aa-9f72-ca813f605f74" />
+
 
 ---
 
